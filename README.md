@@ -18,7 +18,7 @@ Of course it is not a 1:1 implementation, but it approaches well and because of 
 - [x] Adapts dynamically to the number of items
 - [x] `close` slide down
 - [x] `Next/Prev/Done` - Buttons for navigation
-- [ ] Small sniamtion
+- [ ] Small aniamtion
 - [ ] Sliding text
 
 ## Requirements
