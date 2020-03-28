@@ -8,7 +8,8 @@ After some exploring on [Dribbble](https://dribbble.com/) I decided to go for an
 
 Of course it is not a 1:1 implementation, but it approaches well and because of the time limit there is a lack of small animations. These can still be implemented in time.
 
-![GIF](https://github.com/chrishoste/simpleTabBarOnboarding/blob/master/final.gif)
+<img width="300" src="https://github.com/chrishoste/simpleTabBarOnboarding/blob/master/final.gif">
+
 
 ## Features
 
