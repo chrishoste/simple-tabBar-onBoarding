@@ -1,6 +1,9 @@
 # Simple onboarding for a TabBar
 > During the quarantine I challenged myself to pick out some designs on [Dribbble](https://dribbble.com/) and then try to implement them in Swift to keep myself busy. I did not set myself any requirements in quality or anything like that. The only thing is that I have to be able to implement it in a day or less (depending on how much time I have). Status will then be pushed to GitHub without further ado. Projects may or may not be developed further later.
 
+- Number 1: You're here 😅
+- Number 2: [Printerest like floating Tab Bar](https://github.com/chrishoste/printeres-tabbar)
+
 ## Design
 After some exploring on [Dribbble](https://dribbble.com/) I decided to go for an `Onboarding`-Design [(see link)](https://dribbble.com/shots/6833910-Mobile-App-Onboarding). 
 
