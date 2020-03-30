@@ -3,6 +3,7 @@
 
 - Number 1: You're here 😅
 - Number 2: [Printerest like floating Tab Bar](https://github.com/chrishoste/printeres-tabbar)
+- Number 3: [Bottom Search Bar](https://github.com/chrishoste/bottom-search-bar)
 
 ## Design
 After some exploring on [Dribbble](https://dribbble.com/) I decided to go for an `Onboarding`-Design [(see link)](https://dribbble.com/shots/6833910-Mobile-App-Onboarding). 
