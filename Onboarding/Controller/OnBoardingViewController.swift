@@ -5,21 +5,22 @@
 //  Created by Christophe Hoste on 28.03.20.
 //  Copyright © 2020 Christophe Hoste. All rights reserved.
 //
+// swiftlint:disable line_length multiple_closures_with_trailing_closure
 
 import UIKit
 
 class OnBoardingViewController: UIViewController {
-    
+
     let tabBar: UITabBar
     let numberOfItems: Int
-    
+
     let titles = ["Home", "About", "Trending", "Settings"]
     let subTitles = [
         "Learn stuff about the Home-Tab: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
         "Learn stuff about the About-Tab: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "Learn stuff about the Trending-Tab: Lorem Ipsum has been the industry's standard, printer took a galley of type and scrambled it to make a type specimen book.",
         "Learn stuff about the Settings-Tab: it to make a type specimen book."]
-    
+
     let onBoardingView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemBlue
@@ -27,7 +28,7 @@ class OnBoardingViewController: UIViewController {
         view.constrainHeight(constant: 300)
         return view
     }()
-    
+
     let closeButton: UIButton = {
         let button = UIButton()
         button.setImage(#imageLiteral(resourceName: "close"), for: .normal)
@@ -38,7 +39,7 @@ class OnBoardingViewController: UIViewController {
         button.tintColor = .black
         return button
     }()
-    
+
     let nextButton: UIButton = {
         let button = UIButton()
         button.setTitle("Next", for: .normal)
@@ -49,7 +50,7 @@ class OnBoardingViewController: UIViewController {
         button.constrainWidth(constant: 70)
         return button
     }()
-    
+
     let prevButton: UIButton = {
         let button = UIButton()
         button.setTitle("Prev", for: .normal)
@@ -60,7 +61,7 @@ class OnBoardingViewController: UIViewController {
         button.constrainWidth(constant: 70)
         return button
     }()
-    
+
     let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 22)
@@ -68,7 +69,7 @@ class OnBoardingViewController: UIViewController {
         label.textColor = .white
         return label
     }()
-    
+
     let subLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
@@ -77,19 +78,19 @@ class OnBoardingViewController: UIViewController {
         label.minimumScaleFactor = 0.5
         return label
     }()
-    
+
     init(forTabbar: UITabBar, numberOfItems: Int) {
         self.tabBar = forTabbar
         self.numberOfItems = numberOfItems
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     override func viewDidLoad() {
         setupOnBoardingView()
         setupTopControls()
         cutItem(0)
     }
-    
+
     func setupTopControls() {
         let closeStackView = UIStackView(arrangedSubviews: [closeButton, prevButton, UIView(), nextButton])
         let textStackView = UIStackView(arrangedSubviews: [titleLabel, subLabel])
@@ -100,15 +101,22 @@ class OnBoardingViewController: UIViewController {
         let stackView = UIStackView(arrangedSubviews: [closeStackView, textStackView])
         stackView.axis = .vertical
         onBoardingView.addSubview(stackView)
-        
-        stackView.anchor(top: onBoardingView.topAnchor, leading: onBoardingView.leadingAnchor, bottom: onBoardingView.bottomAnchor, trailing: onBoardingView.trailingAnchor, padding: .init(top: 8, left: 8, bottom: tabBar.frame.height, right: 8))
+
+        stackView.anchor(top: onBoardingView.topAnchor,
+                         leading: onBoardingView.leadingAnchor,
+                         bottom: onBoardingView.bottomAnchor,
+                         trailing: onBoardingView.trailingAnchor,
+                         padding: .init(top: 8, left: 8, bottom: tabBar.frame.height, right: 8))
     }
-    
+
     func setupOnBoardingView() {
         view.addSubview(onBoardingView)
-        onBoardingView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
+        onBoardingView.anchor(top: nil,
+                              leading: view.leadingAnchor,
+                              bottom: view.bottomAnchor,
+                              trailing: view.trailingAnchor)
     }
-    
+
     func cutItem(_ atIndex: Int) {
         updateControls(atIndex)
         let itemFrame = tabBar.getFrameForTabAt(index: atIndex)
@@ -129,14 +137,14 @@ class OnBoardingViewController: UIViewController {
 
         onBoardingView.cutHole(atRect: newRect)
     }
-    
+
     func updateControls(_ index: Int) {
         nextButton.tag = index
         prevButton.tag = index
-        
+
         titleLabel.text = titles[index]
         subLabel.text = subTitles[index]
-        
+
         if index == 0 {
             prevButton.isHidden = true
         } else {
@@ -149,7 +157,7 @@ class OnBoardingViewController: UIViewController {
             nextButton.setTitle("Next", for: .normal)
         }
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -164,7 +172,7 @@ extension OnBoardingViewController {
             self.dismiss(animated: false, completion: nil)
         }
     }
-    
+
     @objc
     func next(_ sender: UIButton) {
         sender.tag += 1
@@ -174,7 +182,7 @@ extension OnBoardingViewController {
         }
         cutItem(sender.tag)
     }
-    
+
     @objc
     func prev(_ sender: UIButton) {
         sender.tag -= 1

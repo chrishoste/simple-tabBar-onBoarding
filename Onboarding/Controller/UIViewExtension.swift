@@ -9,9 +9,9 @@
 import UIKit
 
 extension UIView {
-    
+
     func cutHole(atRect: CGRect) {
-        
+
         guard let superview = superview else {
             return
         }
@@ -22,7 +22,9 @@ extension UIView {
         let rectPath = UIBezierPath(roundedRect: atRect, cornerRadius: 10)
         // Create a path
         //let path = UIBezierPath(rect: view.bounds)
-        let path = UIBezierPath(roundedRect: superview.bounds, byRoundingCorners: [.topRight, .topLeft], cornerRadii: .init(width: 30, height: 30))
+        let path = UIBezierPath(roundedRect: superview.bounds,
+                                byRoundingCorners: [.topRight, .topLeft],
+                                cornerRadii: .init(width: 30, height: 30))
         // Append additional path which will create a circle
         path.append(rectPath)
         // Setup the fill rule to EvenOdd to properly mask the specified area and make a crater

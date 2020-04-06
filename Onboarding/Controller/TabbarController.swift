@@ -5,13 +5,14 @@
 //  Created by Christophe Hoste on 27.03.20.
 //  Copyright © 2020 Christophe Hoste. All rights reserved.
 //
+// swiftlint:disable line_length
 
 import UIKit
 
 class Tabbarcontoller: UITabBarController {
-    
+
     let onBoardingView = UIView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +23,7 @@ class Tabbarcontoller: UITabBarController {
             createNavViewController(viewController: ViewController(), title: "Settings", imageName: "rectangle.3.offgrid.fill")
         ]
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         startOnBoarding()
@@ -39,11 +40,11 @@ class Tabbarcontoller: UITabBarController {
 
         return navController
     }
-    
+
     func startOnBoarding() {
         let onBoardingViewController = OnBoardingViewController(forTabbar: tabBar, numberOfItems: viewControllers?.count ?? 0)
         onBoardingViewController.modalPresentationStyle = .overCurrentContext
-        
+
         present(onBoardingViewController, animated: false, completion: nil)
     }
 }

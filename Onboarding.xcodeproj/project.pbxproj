@@ -43,6 +43,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C43202F2243B355F0092CA9A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4E5B47B242E35B000F65156 /* ViewController.swift */,
+				C4E5B48B242E369500F65156 /* Autolayout.swift */,
+				C4E5B48D242E576900F65156 /* TabbarController.swift */,
+				C4E5B48F242F479100F65156 /* OnBoardingViewController.swift */,
+				C4CE8B29242F8A6800231111 /* UIViewExtension.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C43202F3243B35640092CA9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4E5B480242E35B200F65156 /* Assets.xcassets */,
+				C4E5B482242E35B200F65156 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C4E5B46B242E35B000F65156 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +83,11 @@
 		C4E5B476242E35B000F65156 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				C4E5B485242E35B200F65156 /* Info.plist */,
 				C4E5B477242E35B000F65156 /* AppDelegate.swift */,
 				C4E5B479242E35B000F65156 /* SceneDelegate.swift */,
-				C4E5B47B242E35B000F65156 /* ViewController.swift */,
-				C4E5B480242E35B200F65156 /* Assets.xcassets */,
-				C4E5B482242E35B200F65156 /* LaunchScreen.storyboard */,
-				C4E5B485242E35B200F65156 /* Info.plist */,
-				C4E5B48B242E369500F65156 /* Autolayout.swift */,
-				C4E5B48D242E576900F65156 /* TabbarController.swift */,
-				C4E5B48F242F479100F65156 /* OnBoardingViewController.swift */,
-				C4CE8B29242F8A6800231111 /* UIViewExtension.swift */,
+				C43202F3243B35640092CA9A /* Resources */,
+				C43202F2243B355F0092CA9A /* Controller */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -86,6 +102,7 @@
 				C4E5B470242E35B000F65156 /* Sources */,
 				C4E5B471242E35B000F65156 /* Frameworks */,
 				C4E5B472242E35B000F65156 /* Resources */,
+				C43202F1243B34800092CA9A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -140,6 +157,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C43202F1243B34800092CA9A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4E5B470242E35B000F65156 /* Sources */ = {
