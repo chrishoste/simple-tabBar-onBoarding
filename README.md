@@ -9,7 +9,16 @@ After some exploring on [Dribbble](https://dribbble.com/) I decided to go for an
 
 Of course it is not a 1:1 implementation, but it approaches well and because of the time limit there is a lack of small animations. These can still be implemented in time.
 
-<img width="300" src="https://github.com/chrishoste/simpleTabBarOnboarding/blob/master/final.gif">
+## Youtube ([Link](https://youtu.be/xXa8CetKSSM))
+<p align="center">
+  <a href="https://youtu.be/MAUvwFvQl3k">
+    <img alt="youtube_thumbnail" src="https://img.youtube.com/vi/MAUvwFvQl3k/0.jpg" width="300" />
+  </a>
+</p>
+
+<p align="center">
+  <img width="300" src="https://github.com/chrishoste/simpleTabBarOnboarding/blob/master/final.gif">
+</p>
 
 
 ## Features
@@ -19,7 +28,7 @@ Of course it is not a 1:1 implementation, but it approaches well and because of 
 - [x] Adapts dynamically to the number of items
 - [x] `close` slide down
 - [x] `Next/Prev/Done` - Buttons for navigation
-- [ ] Small aniamtion
+- [ ] Small animation
 - [ ] Sliding text
 
 ## Requirements
