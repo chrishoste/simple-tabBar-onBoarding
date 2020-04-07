@@ -19,7 +19,7 @@ Of course it is not a 1:1 implementation, but it approaches well and because of 
 ### Screenshots/Gif's
 
 <p align="center">
-  <img width="300" src="https://github.com/chrishoste/simpleTabBarOnboarding/blob/master/final.gif">
+  <img width="300" src="https://github.com/chrishoste/simpleTabBarOnboarding/blob/master/img/capture.gif">
 </p>
 
 
