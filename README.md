@@ -9,12 +9,14 @@ After some exploring on [Dribbble](https://dribbble.com/) I decided to go for an
 
 Of course it is not a 1:1 implementation, but it approaches well and because of the time limit there is a lack of small animations. These can still be implemented in time.
 
-## Youtube ([Link](https://youtu.be/MAUvwFvQl3k))
+### Youtube ([Link](https://youtu.be/MAUvwFvQl3k))
 <p align="center">
   <a href="https://youtu.be/MAUvwFvQl3k">
     <img alt="youtube_thumbnail" src="https://img.youtube.com/vi/MAUvwFvQl3k/0.jpg" width="300" />
   </a>
 </p>
+
+### Screenshots/Gif's
 
 <p align="center">
   <img width="300" src="https://github.com/chrishoste/simpleTabBarOnboarding/blob/master/final.gif">
